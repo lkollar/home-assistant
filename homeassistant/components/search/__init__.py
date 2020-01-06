@@ -62,7 +62,7 @@ class Searcher:
             search_type, search_id = self._to_resolve.pop()
             await getattr(self, f"_resolve_{search_type}")(search_id)
 
-        # Remove entry into graph from search results.
+        # Remove search item from search results.
         self.results[item_type].remove(item_id)
         # Clean up entity results with types that are represented as entities
         self.results["entity"] -= self.results["script"]
