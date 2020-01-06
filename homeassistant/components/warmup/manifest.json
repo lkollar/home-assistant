@@ -1,0 +1,16 @@
+{
+  "domain": "warmup",
+  "name": "Warmup Heat",
+  "config_flow": true,
+  "documentation": "https://www.home-assistant.io/integrations/warmup",
+  "requirements": [
+    "pywarmup==0.1.0"
+  ],
+  "ssdp": [],
+  "zeroconf": [],
+  "homekit": {},
+  "dependencies": [],
+  "codeowners": [
+    "@lkollar"
+  ]
+}
